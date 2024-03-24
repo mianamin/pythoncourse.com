@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+        <style>
+            .border{
+                border: 3px solid gray;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                height: 100px;
+                width: 1550px;
+                background-color: rgb(91, 160, 221);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 5px 5px;
+                position: fixed;
+                top: -10px;
+                z-index: 1;
+                text-align: center;
+            }
+            .title{
+                font-size: 60px;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                border-radius: 20px;
+                box-shadow: 6px 8px red;
+                text-shadow: 4px 6px rgb(211, 211, 150);
+            }
+            .heading{
+                font-size: 35px;
+                color: brown;
+                font-family: cursive;
+                text-shadow: 4px 4px rgb(171, 170, 170);
+            }
+            .image-up{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                left: 1050px;
+                top: 150px;
+                box-shadow: 5px 7px grey;
+                border-radius: 30px;
+            }
+            .paragraph{
+                font-size: 35px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .frame-border{
+            border: 15px groove rgb(54, 177, 177);
+            width: 1500px;
+            height: fit-content;
+            background-color: rgb(158, 230, 230);
+            border-top-color: blue;
+        }
+        .frame{
+                border: 2px solid black;
+                width: 300px;
+                height: 400px;
+                background-color: white;
+                /* border-radius: 20px; */
+                display: inline-block;
+                margin: 80px;
+                box-shadow: 4px 6px rgb(150, 83, 0);
+            }
+            .frame-image{
+                width: 300px;
+                height: 150px;
+                /* border-top-left-radius: 20px;
+                border-top-right-radius: 20px; */
+
+            }
+            .frame-paragraph{
+                font-size: 25px;
+                color: red;
+            }
+            strong{
+                color: blue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="border">
+            <h1 class="title">Variables</h1>
+            
+        </div>
+        <img src="https://ipcisco.com/wp-content/uploads/2021/04/python-variables-ipcisco-1.jpg" alt="" class="image-up"><br><br><br><br><br>
+        <h1 class="heading">Variable Name:</h1>
+        <p class="paragraph">A variable name can only contain alpha-numeric characters and <br>
+             underscores (A-z, 0-9, and _ )<br>
+             A variable name must start with a letter or the underscore character <br>
+             A variable name cannot start with a number <br>
+             Variable names are case-sensitive ( address, Address and Address<br>
+             are three different variables)<br><br><br><br><br>
+             <strong>In case of multiple words, we can use either technique for better readability.</strong><br><br>
+             <strong>Camel Case:</strong><br><br>
+             myvariablename = "Mian Amin Shah"<br>
+             age = 19 <br><br>
+             <strong>Pascal Case:</strong><br><br>
+             MyVariableName = "Mian Amin Shah"<br>
+             Age = 19 <br><br>
+             <strong>Snake Case:</strong><br><br>
+             my_variable_name = "Mian Amin Shah"<br>
+             my_age = 19 <br><br>
+             <strong>Assign one value to Multiple Variables:</strong><br>
+             <br>a = b = c = 19 <br><br>
+             <strong>Assign many values to Multiple variables:</strong><br><br>
+             name , address , age = "Mian Amin Shah" , "Charsadda" , 19 <br><br>
+
+            </p><br><br>
+        <h1 class="heading">Variable Types:</h1>
+        <div class="frame-border">
+            <div class="frame">
+                <div class="image-and-text">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAA0lBMVEXA0+Q3dKgAAAA3c6T/0kLL2+qCqMkna6K+0eLD1ujG2uvE1+n/0j/K3vDB0+L/0jovb6Ha0qaUo7C6zN1jbXarvMsREhQ9Q0iXttBumLxOhK6zxdXz0mPO4vROVl0kKCs0OT4iJShteIK80+7D09t2goxFTFOissCCj5u50/T/0i6MmqY3PEHU07NTW2IsMDQZGx2bqrhcZW3c0pysxNp4nb0UFhjX7P9Ee6n50kvG09P10lbO08Xp0nnv0m7b8f+ivNTm0otejbTi05HR0rzw0mhzhWfsAAAPCElEQVR4nO2cC1vbuBKGdcRNlziB+BKo184FfCl249ilSSltl7a7//8vnRnZTpwQaDiHkGWj73kKxpZk+fXMaCR5lxAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLa1/jfiuO/AKYiZb+v10YSLXXxDMtV0iNmno6evMNB8cNWQuV26W2egB/j+5hT8CANy1/NHvb2Zwe60BiaRIs7ToGoQZlm/JJ1qSsV+4j1qhSHw/UVfdsV8Yq3XdcRgv6jIjCf26Q3Lsj8SWcdkZ9cEgOP7+7a14FFrGmlKioKVig3kZzZ7qtLBoZj9in3A1otQnigOlI2+lHWnDyQYsL6C0hiUoDdf17SXl1rAGFSwupbo9f/ATCk2o5VWFGs8rLUrTILaGlHalMaADQapG4Nq8YFWngsX54qHhQl2cGD31/MxLKXXLSnUX4Ni0rC6f1yhhVSWEQ32Etdy1lxXCkoyRCpYkdrdrc0lM24ZwAD8Z4eUxvMnukI5dE90h70amqClEfdpzPQONoWAewPLsbq4uS1MVxLcg7PJQweLctqMalRl14Ur5hMyLKQ0MxhlYmCQMLuWuUF0gUdclrrp9dVrBct08t8UcloD+R9vCBbDGM8/zzBRhSbvoU5pZpmFn/YTLZDjpCiOYDGx8qmhK6XTY5TzuOXTS61YhRcbK/xhhQRwhrDToUyeMAEweQkE8IjIYUHUoEZYX9CdVRBJuOCyvlORduL+hvDAW7hguTVPoQjLxR31q2YNJwHl5updLgOUEYIKDBO6lYPE4o3Q4MrczNAOsQRwEwWgIsLgJt/LBEXwTvMlSsagwZI+OlW1EDqXOsIvvM/OHdNqtbMuijq0OheAIC6IHtDE2pe3QITzY0OUeeqo/oY5pACy3W0YmRSejEz8EXMq/IVj56FpiTPs2uqQfTqE82huGRNehI0KwcXgLYM3QEzqAZie5VLAIlEuhMWsrrBBWLZ95BXXymfIE6EfmMniDKUaqWNm1dOHlehLe/diYmT3orXo8MqZTVxVA60JY0MYY7GfWowOJBS0PIrNlzKJeLwFsaHnj6uVLtxjbs9mI0vpEFyM7jDcFYYWfz2YxoMAu9ePARlhQw4/+nAW0HyGswptFQ3B/BcuGDs7+zKEHWzEtgOVkoD7ci4gpHQsIChC/CDxeZNOJM7QT6FYZBLAvhgE9jKSJ/e/KGlY5vgmpYE0EJBBgGTBAFXZkj2koYuw/I66JMWs6oUO7jngE6OcxWIMr5z1K0QvBtQwBl3w6zcv3J4Q7xdEQTnehRgkrkmiMqYuwPAAdwx2hsHj4qC8Cy4fUzowAEMaLEeRIRkgHrshoHNOiR5MRDashuYRV0D6YlAEdS8rnAzdUEYdjLAb/zSpYJoa4IVhnZgZ0EpUvG2CBnKR+GiPyMwdPmXVUtqDsCOyaQwQd4KXSsrqcSQWrPq1gORBNoUeZDbBCLDZRdyy2knI1UwdulrBECB4GBhT6tBtgDAuqBKaEZSEstoAl1QCGwxr4jomj4QJWWqBGJKBThCWERFgDMJ4qMS3jGrwQyuqEKXHouAexksCI6IwT5OwpyyQKlgBfdAqoUVqWDV1pwvLVHeOn8uIXgcWMPg05jE99iAE8wndq409a+wzC8tBFYCD0RrWxYEKb5TCgwxOPSAOWAX/DSOu6anBLDEyTEgMNBx2lfBx4J2A4EIHmsLib4j1zoW40myUrsNTxDGpkClZicBnS0FRuiNHqz5lhm+0toFqBhTcPTBfcCqIRBGYwMIn2Xk87gMoYpmBw3ja7WTlGgjAiDYsRDGPgO8YcVoTjRReTM0uAkYW2iTkGBPiB7c3DHMByYjPK5gG+dlShCAcsCldhQSdjkvcqy8psFqNzqgAPnKFrI/TZbcCC5w8X0x0WKh+haroIfS7QUMCaKipuD0aDBB9imE7B7OooI4JqQIWMqpzuAKxhJN0hdVLIFwAh1OmnDk2FSkoFmFbolfkIZlLThvkqB4dBjmFUoFAdrGdWwQKfHWFdijWcLpgXjBUQwPouV9MdgrcZYG68DVYwX01HCAt+Y3Ii416/D+M7HuZhL5FGkqZzKLILVxMu7CLrDwoyD6LMc0dhzw/gDASQtJBMxKlvgyVYg2E2hrDPjDzM+im8BBmkYxeMMc0UHUCT9vsjezyI59NmGfbwnkxEYT+z7CINvO6gF6FlhWlMRN7rZyPbT2MvGRTuuJ/5TDAZppYobzMI+JbWi+pJWvXb4C7YQTVLxFOcy8WdBbPRW4Rh2qbR6BATnpCGwdm8ofKnVAXLtEK4NjMWV3gVgpkgWGTp8WR1TwGdMUTZi0YvBYca9WkpXFfIebuQVsDFl8f0iGBi9bgR1+SaBJVY9e+xCqrhte8bpkKP28Ejl5ZOr8wEH7mNlpaWltZjkgttVJ6vLVe1sD4Gr6/yBsXybq18k/Lc7nYfnpVR2YK9ujyH+PDimh2dNyic/VTqbVCcicbceHHWq1sJoyUjkvaIEZgeTe2X6/EO1YRVpZO41lf9I/WZ+WEJS51onPXCupHMJGzeDk8yynDtcWiTeeF5veomW98WfEGZpumGtAe/uKhycon/uBDl30TOj+aCixxPVyaGsBxoAWaiMKWuTgtBYCpJhURYLpauq1bNSXUjsZX1vC0JZhYmwCIC96METHNHVuLFVuJaPT/BzXuWFOk4roOR7FojJnIrcBO/N7LrzZtQOSeupVhmYeXQjmtZeZzC3zEuK0ZxLwzUlMoO/LRIwDgNuIkZhL1gS9sQW5KCRbijFmFwCXeW0hQ3KGgAdEbKvcZlUeWGphHTiXK8rAxfCpYwxCwBOBKX69Telz1UYQyXulRrY05EpI5oYRKok6oYsKVtiC2phGWMcP/FwHWpWQ/XsOweLpPjRoMZO2rRtAGLDrvuGNfo1OwRYeV5HgMd3LqgJoczPZb78HcObkgz2/bpNBJiAm26Ae5Ae3Cx70a9+VbA21AJi+Aei2cPqMVxcHOFodbkBmAn3BtBVEMjWsBKDI4Lo94cVqmC89yBwGXDD6xGDYxZFDAl9QKWQTxcQ5z56ibxYu/tTaiCRcY0M7qO05UAKyOM8D54DjinZY161ZcMc1i46IprdgtY0+mkrwIQNDcGLxxGHD8AINVoqGDBYYYL/QgbYE1MJrCpNwhLJtSJAhz8AdaAMyJwidmpTGYYrcASK7Ai27ZdtS4VgCcXuEKLK8mENGGNaYpbSEkJa/h2YeGCfeFTyzMB1hTznyEtxBSCsWvWS01PwKq/M4EgPnGsFPeOHsCa4YaHsiyn+7ZhVVsKtlAJeWyUA6MPUVgwq1d+5vUErEVyaWAEm7pSFea8aVk5bpSqXMV967ByzAaMavYSBBm4kxFBap9Y9WbwJrDU/g0MC+WOR4C7ZDUsgRxHMQ6S0nubsFwIUeqAZ+rDIISVoZU5uYRIpqKWVaWfaH1qNERYdA6r17QsgoEOkwocGOlAFrjBXMIibvmBXCIUYAWLvilYLMrVV1UMXjbum+Oz9418FKuPsYSZjIL5NwzcznPC3TyHOG1G+XwDOm+sWeCHEQ4rzwdBDlUis64DKXw8SrBhAafZ/PTbESTf8JPxyFGZuoJFhOeV6Tk3PG/xjYE0DPUDN2GEIZdaKMUkznrKrSQJVaG0+mRC1YGrnlfuF5V1yqbeknANwYiLTKVPFaylVYdmWbb2cHEQFMPyE4h53eWFhXlzb2m9YVkMpzs4GZzD+h/bwUzUid+YtTxbZhSxl9jHhHb46+2H7kpCvIhn8BdqR0tLS0tLS0tLS0tLS0vr36XyS/Hy22s9c35aAImZN0omI9v6oP9fIM7N++OLd58/H5yCDj6/+/np/IZs579Deus6Mj+9U5hOD5RKYhfnR7vu2D9Q8vxzRWlJp6cXe/F/Y3mW+DHY0dyqmjp59+/40vYFdQN2dfrz+NMa8zq90HGrKXZ0fAKsGG/ff17jizfaERsCWGBY9xjLLx6a1snxkU65FlKwTu6BSfvTOj/UsBoqLeuCHB3drA1aGlZDCtbBwcX58bt16YOG1VQF63Rt7qBhLauC9Yg0rCVh6nDalIa1Xkz9h0k3500tZ1sLWHuenfJK4mhJS2MiwLr6grra52liGwzq08U6rbihcXZ4i/r2ob2vuMTNxefT9XoAq9NCdVrf9pTW0c3BE0PgKqzDUtffd93tnYhvymoJ1uH1j113fBdiPzdktQzr8Pbrrnv++mqfb4hqFVbnB9+/DGJjw1qB1br9suuuv7baNxsb1sHJcRPW4fWHy133/pX15GRw1bLu5a8mrB/v98sP2dGaFdHHWL1rk28NWJ0/3u+6+6+so7UbX+t1zr/cthawWof7lpfyjZOsg+P2+1/Xhw1YnV13/tW1fkf1od7dty+/dFoa1jKpk9PP71b089M9A1Z/NCKWhqXC+DmTR8aqOL86O1xipWEdHBwzwa++fjhb0ccfd9etQw2rqZPjNm9//Pu21XmgFVT7CEsu++Dno8svfz/kslb7B2tl4fhcrETxp2C1dt35VxY7WppHf2bk16asDjt3ezY3ZEefThqG9ZNc3W7mgwjr257NDYk4b1jW6cXlXxsb1uH12eWewSJmY2vw9NPl2fXvKZVq3V7tuu+vLt5YdgBYHzeG1fmxf3ut7fuD/wlWax/X4Jvf+D0HVudsz8ZCJW6+O302rNb1r31bzCol51/5PYTVWqvO9e3HXfd6V+LmxemJ0sVmsO5+fdlPu1I6MtUXRsf3K7A6K+NdW4lcvt9jVmBc5RdG7VVYV0sqPwbhe/99VqlVWK0/mrr7tXcp+1NahbUcs673bjL4pB7Aqt1RLXHt38z5Sa2H1ep8/3HX0bBWtB5W52ObXH3vaFjLar9fA6vzvQ0Uv2pYK1prWZ1vkF/xq5aGtSL+9eHiX+vuyyV/f6Yta1Vt8v0hrc4ff305u23t49Lo0+Jf7tbQur6+bil33HX3/mG6/Pp3Z906fKvzbe8+i/y9+NXHu9X9ZzCtu7P9W3LfRPzqw7dbdL1anbs9/u9PfqvL95dXXz/U+noFf++6S/9ctduEXy7EdWT/jdoL7borWlpaWlpaWlpaWlpaWlpa/4+Y1sYiR1obixxrbSxyorWxyH+0NpaG9QxpWM+QhvUMaVjPkIb1DP0Xo+7knfjFa1UAAAAASUVORK5CYII=" alt="" class="frame-image">
+            <p class="frame-paragraph">x = 50 <br>
+                y = "Mike"<br>
+                print(type(x)) <br>
+                print(type(y)) 
+                </p></div></div>
+                <div class="frame">
+                    <div class="image-and-text">
+                    <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/01/Type-Casting-in-Python.jpg" class="frame-image" alt="">
+                   <p class="frame-paragraph">
+    x = float(x) <br>
+    x = int(x) <br>
+    Can not add int and string <br>
+    x = 50 <br>
+    y = "20" <br>
+    y = x + int(y) <br>
+    print(z) <br>
+    
+                    </p></div></div>
+                    <div class="frame">
+                        <div class="image-and-text">
+                        <img src="https://favtutor.com/resources/images/uploads/How_to_Delete_Variable_in_Python.png" alt="" class="frame-image">
+                    <p class="frame-paragraph">
+                        x = 50 <br>
+    print(x) <br>
+    del x <br>
+    print(x) <br>
+                        </p></div></div></div>
+
+    </body>
+</html>

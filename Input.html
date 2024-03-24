@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input in Python</title>
+        <style>
+            .border{
+                border: 3px solid gray;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                height: 100px;
+                width: 1550px;
+                background-color: rgb(91, 160, 221);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 5px 5px;
+                position: fixed;
+                top: -10px;
+                z-index: 1;
+                text-align: center;
+            }
+            .title{
+                font-size: 60px;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                border-radius: 20px;
+                box-shadow: 6px 8px red;
+                text-shadow: 4px 6px rgb(211, 211, 150);
+            }
+            .button-border{
+                border: 2px solid rgb(121, 121, 11);
+                background-color: yellow;
+                border-radius: 20px;
+                width: 700px;
+                height: 50px;
+                text-align: center;
+                margin-left: 380px;
+                box-shadow: 4px 6px aqua;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+            }
+            .button{
+                width: fit-content ;
+                font-size: 30px;
+                text-align: center;
+                font-weight: bold;
+                color: red;
+                text-decoration: none;
+                border-radius: 10px;
+                margin: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                transition: .5s;
+            }
+            .button:hover{
+                background-color: white;
+                color: red;
+                text-decoration: none;
+                box-shadow: 3px 6px blue;
+                background-color: yellow;
+                backdrop-filter: blur(30px);
+                font-size: 40px;
+                margin: 40px;
+
+                
+            }
+            
+            .side-image{
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+                position: absolute;
+                left: 2500px;
+                top: 200px;
+                transition: 2s;
+            }
+            .big-border:hover .side-image{
+                position: absolute;
+                left: 1200px;
+                top: 200px;
+            }
+            .big-border{
+                width: 2000px;
+                height: 2500px;
+                background-color: white;
+            }
+            .explanation-heading{
+                font-family: cursive;
+                font-size: 45px;
+                color: brown;
+                box-shadow: 3px 3px grey;
+                position: absolute;
+                top: 1500px;
+                transition: 2s;
+                background-color: rgb(203, 203, 203);
+            }
+            .big-border:hover .explanation-heading{
+                position: absolute;
+                top: 200px;
+                
+            }
+            .explanation-paragraph{
+                font-size: 35px;
+                position: absolute;
+                left: 2500px;
+                transition: 2s;
+            }
+            .big-border:hover .explanation-paragraph{
+                position: absolute;
+                left: 10px;
+            }
+            .example-heading{
+                font-family: cursive;
+                font-size: 45px;
+                color: brown;
+                box-shadow: 3px 3px grey;
+                position: absolute;
+                bottom: 3500px;
+                transition: 2s;
+                background-color: rgb(203, 203, 203);
+            }
+            .big-border:hover .example-heading{
+                position: absolute;
+                bottom: 50px;
+            }
+            .example-text-frame{
+                border: 2px solid rgb(56, 167, 167);
+                background-color: aqua;
+                width: 700px;
+                height: 400px;
+                transition: 2s;
+                position: absolute;
+                top: 700px;
+                right: 1500px;
+            }
+            .big-border:hover .example-text-frame{
+                position: absolute;
+                right: 750px;
+            }
+            .example-code{
+                font-size: 35px;
+            }
+            .media-heading{
+                font-family: cursive;
+                font-size: 45px;
+                color: brown;
+                box-shadow: 3px 3px grey;
+                position: absolute;
+                top: 3500px;
+                transition: 2s;
+                background-color: rgb(203, 203, 203);
+            }
+            .big-border:hover .media-heading{
+                position: absolute;
+                top: 1150px;
+            }
+            .media-video{
+            width: 600px;
+            height: 400px;
+            transition: 2s;
+            position: absolute;
+            top: 2500px;
+            }
+            .big-border:hover .media-video{
+                position: absolute;
+                top: 1300px;
+            }
+             
+
+        </style>
+    </head>
+    <body class="body">
+        <div class="border">
+            <h1 class="title">Input</h1>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="button-border">
+            <a href="#explanation" class="button">Explanation</a>
+            <a href="" class="button">Examples</a>
+            <a href="" class="button">Media</a>
+        </div><br><br>
+        <div class="big-border">
+            <img src="https://ipcisco.com/wp-content/uploads/2021/09/python-user-input-ipcisco.jpg" alt="" class="side-image">
+            <br><br><br><br>
+            <h1 class="explanation-heading" id="explanation">Explanation</h1>
+            <p class="explanation-paragraph">In Python, "input" is a built-in function used to receive input <br>
+                from the user via the keyboard. When you use the <br>
+                "input" function, it displays a prompt (if provided) and waits for the <br>
+                user to enter some text followed by pressing the Enter key. <br>
+                The input provided by the user is returned as a string.</p>
+            <h1 class="example-heading">Examples:</h1>
+            <div class="example-text-frame">
+                <p class="example-code">
+                    name = input("Please enter your name: ") <br>
+                    address = input("Please enter your address: ") <br>
+                    age = int(input("Enter your age: ")) <br>
+                    print("Your name is ",name) <br>
+                    print("Your address is ",address) <br>
+                    print("Your age is ",age)</p>
+            </div>
+            <h1 class="media-heading">Media</h1>
+            <iframe src="https://www.codewithharry.com/videos/python-100-days-of-code-10/" frameborder="0" allowfullscreen class="media-video"></iframe>
+        </div>
+    </body>
+</html>

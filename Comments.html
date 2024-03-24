@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comments</title>
+        <style>
+            .border{
+                border: 3px solid gray;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                height: 100px;
+                width: 1550px;
+                background-color: rgb(91, 160, 221);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 5px 5px;
+                position: fixed;
+                top: -10px;
+                z-index: 1;
+                text-align: center;
+            }
+            .title{
+                font-size: 60px;
+                font-family: 'Courier New', Courier, monospace;
+                border-radius: 15px;
+                box-shadow: 4px 8px;
+                width: 300px;
+                
+            }
+            .comment{
+                font-family: cursive;
+                color: brown;
+                font-size: 45px;
+                text-shadow: 2px 2px black;
+            }
+            .image-up{
+                width: 1500px;
+                height: 800px;
+                box-shadow: 9px 9px;
+            }
+            .paragraph1{
+                font-size: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .single-line{
+                font-size: 45px;
+                color: brown;
+                font-family: cursive;
+                text-shadow: 2px 2px black;
+            }
+            .type-of-comment{
+                width: 900px;
+                height: 300px;
+            }
+            .single-line-comment{
+                font-size: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .single-line-code{
+                border: 2px solid aqua;
+                background-color: aqua;
+                width: 600px;
+                border-radius: 20px;
+                box-shadow: 6px 10px 10px 10px;
+                text-align: center;
+                font-size: 35px;
+            }
+            .multi-line{
+                font-size: 45px;
+                color: brown;
+                font-family: cursive;
+                
+            }
+            .multi-line{
+                text-shadow: 2px 2px black;
+            }
+            .multi-line-comment{
+                font-size: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .multi-line-code{
+                border: 2px solid aqua;
+                background-color: aqua;
+                width: 600px;
+                border-radius: 20px;
+                box-shadow: 6px 10px 10px 10px;
+                
+                font-size: 35px;
+            }
+            
+            .single-image{
+                width: 500px;
+                height: 500px;
+            }
+            .multi-image{
+                width: 600px;
+                height: 400px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://pythonscholar.com/wp-content/uploads/2021/09/Python-Comments-1024x569.jpg" alt="" class="image-up">
+        <div class="border">
+            <h1 class="title">Comments</h1>
+        </div><br><br><br><br><br><br><br>
+        <h1 class="comment">Comments</h1>
+        <p class="paragraph1">Comments are used to explain Python Code.<br>
+        There are two types of comment.</p>
+        <img src="https://www.edureka.co/blog/wp-content/uploads/2019/04/Types-of-Comments-Comments-in-Python-Edureka-2.png" alt="" class="type-of-comment">
+
+        <h1 class="single-line">Single line Comment</h1>
+        <p class="single-line-comment">In Python, a single-line comment is a piece of text that is ignored by the Python <br>
+            nterpreter when executing the code. It is typically used to provide explanations, <br>
+            notes, or annotations within the code. Single-line comments begin with the hash symbol (#)<br>
+            and extend to the end of the line. Here's an example:</p>
+        <p class="single-line-code">
+            <img src="https://thumbs.dreamstime.com/b/doodle-element-hashtag-icon-spray-painted-graffiti-hash-tag-symbol-black-over-white-isolated-white-background-doodle-element-259814352.jpg" alt="" class="single-image">
+            <br><br>
+            # this is single line comment <br>
+            # this is also a single line comment <br>
+            print("Hello world!") <br>
+            # this is last line of program <br>
+        
+        
+            <br>
+            <br>
+            
+            print("Hello world!") <br>
+            # this line print Hello world!</p>
+            <br><br>
+            <h1 class="multi-line">Multi Line Comment</h1>
+            <p class="multi-line-comment">In Python, there isn't a built-in syntax specifically for multi-line comments like there is in some <br>
+                other programming languages. However, you can use triple quotes (''' or """) to create <br>
+                multi-line string literals, and they are often used as a workaround for multi-line comments. <br>
+                Since Python ignores string literals that are not assigned to a variable or used in any way, you <br>
+                can effectively use triple-quoted strings as multi-line comments. <br><br>
+            Here is an example: <br><br></p>
+            <p class="multi-line-code">
+                <img src="https://files.codingninjas.in/article_images/custom-upload-1688099755-fadd0d27.webp" alt="" class="multi-image"><br><br><br>
+                """ this is multi-line comment <br>
+this is second line of comment <br>
+this is third line of comment <br>
+this is last line of comment <br>
+""" <br>
+print("Hello world!") <br>
+""" text between these quotes are ignored by the compiler <br>
+the purpose of comments is to explain the program""" <br>
+            </p>
+    </body>
+</html>
